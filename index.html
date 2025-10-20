@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Active Rehab</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 20px;
+      max-width: 700px;
+      margin: 0 auto 40px;
+      font-weight: 300;
+    }
+
+    .section {
+      margin: 60px auto;
+      max-width: 800px;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      text-align: left;
+    }
+
+    .section h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    input[type="date"],
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+    }
+
+    button {
+      background-color: #00c896;
+      color: white;
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    button:hover {
+      background-color: #009e76;
+    }
+
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+      border-radius: 10px;
+    }
+
+    .confirmation {
+      margin-top: 10px;
+      font-size: 18px;
+      color: #00ffcc;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1>Active Rehab</h1>
+    <p>Dobrodošli u Active Rehab—vaš centar za personalizovani fitness i oporavak. Bilo da želite da poboljšate kondiciju, ojačate telo ili se oporavite od povrede, naš tim je tu da vas podrži na svakom koraku.</p>
+
+    <div class="section">
+      <h2>📅 Zakazivanje termina</h2>
+      <form action="https://formsubmit.co/ivan.ilic.1998@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Vaše ime" required>
+        <input type="email" name="email" placeholder="Vaš email" required>
+        <input type="date" name="datum" required>
+        <input type="hidden" name="_subject" value="Nova rezervacija termina">
+        <input type="hidden" name="_captcha" value="false">
+        <button type="submit">Zakaži termin</button>
+      </form>
+    </div>
+
+    <div class="section">
+      <h2>⭐ Iskustva korisnika</h2>
+      <p>„Posle povrede kolena, Active Rehab mi je pomogao da se vratim treninzima brže nego što sam očekivao.“ – Marko S.</p>
+      <p>„Treneri su stručni i puni razumevanja. Oporavak mi je bio lakši uz njihovu podršku.“ – Jelena T.</p>
+      <p>„Kombinacija treninga i rehabilitacije je pun pogodak!“ – Nemanja R.</p>
+    </div>
+
+    <div class="section">
+      <h2>🎥 Edukativni video</h2>
+      <iframe src="https://www.youtube.com/embed/i_ohtG0DKrw" allowfullscreen></iframe>
+    </div>
+  </div>
+</body>
+</html>
